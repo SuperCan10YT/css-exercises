@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 8px;
-  align-items: center;
+  /* align-items: center; IT'S ONLY FOR ITEMS */
 }
 
 .profile-image {
@@ -53,18 +53,22 @@ ul {
   margin: 0;
 }
 
-.header_left {
+.header_left, .header_right {
   display: flex;
-  justify-content: flex-start;
   gap: 16px;
+  align-items: center;
+}
+
+.header_left {
+  justify-content: flex-start;
 }
 
 .header_right {
-  display: flex;
   justify-content: flex-end;
-  gap: 16px;
   flex: 1 1 auto;
 }
+
+
 
 .links {
   display: flex;
