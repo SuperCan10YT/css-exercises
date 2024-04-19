@@ -31,6 +31,19 @@ input {
 
 ul {
   list-style-type: none;
+  margin: 16px 0px;
+}
+
+ul.right-links {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+ul.left-links {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
 }
 
 a:link { 
@@ -48,7 +61,8 @@ a:active {
 
 .header {
   display: flex;
-  
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .content {
@@ -57,6 +71,4 @@ a:active {
 
 .footer {
   display: flex;
-align-items: flex-end;
-
 }
