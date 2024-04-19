@@ -9,6 +9,7 @@ body {
 
 img {
   width: 600px;
+  
 }
 
 button {
@@ -35,10 +36,22 @@ a:link {
 } 
 a:visited { 
   text-decoration: none; 
-} 
+} c¿
 a:hover { 
   text-decoration: none; 
 } 
 a:active { 
   text-decoration: none; 
+}
+
+.header {
+  display: flex;
+}
+
+.content {
+  display: flex;
+}
+
+.footer {
+  display: flex;
 }
