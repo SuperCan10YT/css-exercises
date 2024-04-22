@@ -5,10 +5,40 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* FLEX IN COLUMN TO ORDER THINGS VERTICALLY */
+  display: flex;
+  flex-direction: column;
 }
 
-img {
-  width: 600px;
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header {
+  color: #696969;
+  height: 25px;
+}
+
+.footer {
+  color: rgb(75, 75, 75);
+  background-color: rgb(192, 192, 192);
+  height: 25px;
+}
+
+.left-links, .right-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1 0 auto;
+  align-items: center;
 }
 
 button {
@@ -16,6 +46,18 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
+}
+
+img {
+  width: 600px;
+}
+
+ul {
+  list-style-type: none;
+  /* REMOVE DEFAULT STYLING */
+  padding: 0;
+  margin: 0;
 }
 
 input {
@@ -26,9 +68,7 @@ input {
   margin-bottom: 16px;
 }
 
-ul {
-  list-style-type: none;
-}
+
 
 a {
   text-decoration: none;
